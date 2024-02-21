@@ -1,5 +1,4 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ img {
 }
 
 /* COMMON */
-
 * {
     font-family: 'Seven Segment', sans-serif;;
 }
@@ -22,7 +20,7 @@ body {
 
 /* MAIN */
 .container {
-    margin: 100px 300px;
+    margin: 10px 300px;
     width: 300px;
     height: 500px;
     border-radius: 10px;
@@ -33,7 +31,6 @@ body {
 
 
 /* HEADER */
-
 header {
     text-align: center;
     justify-content: center;
@@ -43,7 +40,6 @@ header {
 }
 
 /* DISPLAY SECTION */
-
 .display {
     background-color: black;
     color: aquamarine;
@@ -56,32 +52,37 @@ header {
 }
 
 /* BUTTONS SECTION */
-
 .buttons {
     display: flex;
 }
 
 .right {
+    width: 70%;
     padding: 10px;
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
 
 .left {
+    width: 30%;
     padding: 10px;
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-flow: column wrap;
+
 }
 
-.buttons button {
-    font-size: 25px;
-    margin: 10px;
-    width: 20%;
+.buttons .right button {
+    margin: 5px;
+    width: calc(100% / 4);
     padding: 5px;
+    flex-grow: 1;
+}
+
+.buttons .left button {
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 1;
 }
 
 .grey-button {
